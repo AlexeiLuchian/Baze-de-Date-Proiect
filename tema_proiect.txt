@@ -1,0 +1,17 @@
+Tema proiectului: Campis (o aplicatie asemanatoare cu Vinted/OLX, care implementeaza si functionalitatea Swipe, pe care vreau sa o fac)
+
+Descriere non-tehnica:
+Platforma ajuta utilizatorii sa vanda/cumpere produsele de care nu mai au nevoie (haine, electrocasnice, manuale).
+Produsele de pe platforma vor avea preturi pana la 10.000 RON.
+Fiecare utilizator va avea un profil unde ceilalti ii pot vedea istoricul de tranzactii si produsele pe care acesta le are de vanzare la momentul dat.
+Pentru simplitate presupunem ca platile se vor efectua doar fizic (face-to-face) si o tranzactie va fi mereu compusa dintr-un singur produs.
+Platforma va avea si functionalitatea Swipe, aplicatia va avea o sectiune unde utilizatorilor li se vor arata produsele disponibile, iar acestia vor trebui sa gliseze la dreapta daca sunt interesati de produs, si la stanga daca nu sunt interesati, astfel creandu-se un cos de cumparaturi doar cu produsele pentru care utilizatorul prezinta interes.
+
+Descriere tehnica:
+- tabela produse(id_produs, titlu, pret, status, FK:id_vanzator)
+- tabela detalii(descriere, categorie, stare, data_postare, FK:id_produsului)
+- tabela utilizatori(id_utilizator, nume, prenume, email, parola)
+- tabela cos_cumparaturi(id_adaugare, FK:id_utilizator, FK:id_produs)
+- tabela tranzactii(id_tranzactie, pret_total, data_tranzactie, FK:id_produs, FK:id_vanzator, FK:id_cumparator)
+- tabela recenzii(id_recenzie, rating, comentariu, FK:id_tranzactie, FK:id_autor, FK:id_destinatar)
+- tabela profil(bio, nr_telefon, FK:id_utilizator)
