@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2E2EB57-909F-3836-468D-B9DD4E6FB183" name="produse">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:49:26 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produs" id="3A7E24DA-0A1F-9C2B-E2D1-2026FC5DE1D5">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:49:32 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titlu" id="57D44F9D-EB9D-1AAE-18F3-AEEF3B8300AB">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:49:54 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(titlu) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="5878246A-16E2-2B91-98F1-CC282F5B6E22">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:50:38 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="CA66E486-16A0-63E1-A51A-D765ECBC1923">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:51:51 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="disponibil" description=""/>
+<valueDef value="rezervat" description=""/>
+<valueDef value="vandut" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_postare" id="F28827EC-B3B0-63BD-71CF-9FD01787DB34">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:53:50 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01B39BA4-8A9E-FFDE-45F4-E5B556147B35" name="produse PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:49:46 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A7E24DA-0A1F-9C2B-E2D1-2026FC5DE1D5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

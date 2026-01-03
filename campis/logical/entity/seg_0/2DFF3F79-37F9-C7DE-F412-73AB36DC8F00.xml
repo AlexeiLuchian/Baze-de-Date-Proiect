@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2DFF3F79-37F9-C7DE-F412-73AB36DC8F00" name="cos_cumparaturi">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:12:56 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_adaugare" id="F8EF0D6B-730E-D40F-A94C-342B2277F296">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:13:11 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F2A5E08-722D-DEB6-B5C5-95F8D4A3D744" name="cos_cumparaturi PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:14:07 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8EF0D6B-730E-D40F-A94C-342B2277F296</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

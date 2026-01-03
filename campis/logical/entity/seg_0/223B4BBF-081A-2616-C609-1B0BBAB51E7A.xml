@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="223B4BBF-081A-2616-C609-1B0BBAB51E7A" name="recenzii">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:14:32 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_recenzie" id="6F2BB42F-E6F1-7EE5-AE50-4678AF827B20">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:14:39 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rating" id="53F83BBD-B0D8-83F7-056B-8431DD53A9B1">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:15:13 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+<description>stele (un rating pe o scara de la 1 la 5)</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="comentariu" id="022F8ED9-7179-23E2-4D7B-4892B53D09D7">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:15:45 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(comentariu) &gt;= 3"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B06F0A6-0F95-2269-15C1-0BFDD43AA29B" name="recenzii PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:15:10 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F2BB42F-E6F1-7EE5-AE50-4678AF827B20</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -12,6 +12,6 @@ Descriere tehnica:
 - tabela detalii(descriere, categorie, stare, data_postare, FK:id_produsului)
 - tabela utilizatori(id_utilizator, nume, prenume, email, parola)
 - tabela cos_cumparaturi(id_adaugare, FK:id_utilizator, FK:id_produs)
-- tabela tranzactii(id_tranzactie, pret_total, data_tranzactie, FK:id_produs, FK:id_vanzator, FK:id_cumparator)
+- tabela tranzactii(id_tranzactie, pret_final, data_tranzactie, FK:id_produs, FK:id_vanzator, FK:id_cumparator)
 - tabela recenzii(id_recenzie, rating, comentariu, FK:id_tranzactie, FK:id_autor, FK:id_destinatar)
 - tabela profil(bio, nr_telefon, FK:id_utilizator)

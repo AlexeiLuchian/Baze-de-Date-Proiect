@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8886EC31-B38C-7B38-6329-6A6E55E2B7C0" name="profil">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:16:31 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bio" id="AE1FB839-0FF9-7E7F-B50C-4D8777EE3853">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:16:37 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(bio) &gt; 9"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefon" id="FFC93BB4-13AD-7A14-15EC-0DC94F2D6320">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:19:17 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nr_telefon, &apos;^\+?[0-9]{10,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E3AA5FB-ED93-4F77-B5D8-137FD6B0D329" name="nr_telefon">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:35:17 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<newElementsIDs>FFC93BB4-13AD-7A14-15EC-0DC94F2D6320</newElementsIDs>
+<usedAttributes>
+<attributeRef>FFC93BB4-13AD-7A14-15EC-0DC94F2D6320</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

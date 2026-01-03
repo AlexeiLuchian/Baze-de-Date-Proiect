@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2107B1BF-8188-7E6B-3C45-B47921818E9E" name="detalii">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:54:10 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="descriere" id="E8A1B197-5EF3-DE84-140E-A374104C2AFA">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:54:21 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(descriere) &gt; 9"/>
+</checkConstraint>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="categorie" id="153EF225-5A2E-D145-F878-4C5403802E37">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 11:54:44 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="carti" description=""/>
+<valueDef value="diverse" description=""/>
+<valueDef value="electronice" description=""/>
+<valueDef value="haine" description=""/>
+<valueDef value="mobilier" description=""/>
+<valueDef value="servicii" description=""/>
+<valueDef value="sport" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stare" id="2FE151AF-11D4-5266-D79D-89CE3B46CFD1">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 12:00:16 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="defect" description=""/>
+<valueDef value="folosit" description=""/>
+<valueDef value="nou" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
