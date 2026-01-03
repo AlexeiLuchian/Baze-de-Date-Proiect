@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5887084D-A0C4-BADE-ED51-DCA2C9F789D9" containerWithKeyObject="E3A94CA6-E371-8A67-0AB2-E7C7DB2A95F8" localFKIndex="D065E5F7-BEFE-A0C4-BB0D-711A64846E35" name="tranzactii_cumparator_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>58D41C9E-FB06-A288-7B6E-BC796C4559A4</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<referredTableLongName>utilizatori</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1941E87-3FFB-A8C7-E901-F74088311052</referredTableID>
+<keyObject>DC8FF0D4-2DA4-5372-91EB-FF86A784E154</keyObject>
+<referredKeyID>DC8FF0D4-2DA4-5372-91EB-FF86A784E154</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_utilizator</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

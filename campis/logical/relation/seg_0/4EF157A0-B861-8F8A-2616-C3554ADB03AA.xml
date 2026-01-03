@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="destinatar_recenzii_fk" directorySegmentName="seg_0" id="4EF157A0-B861-8F8A-2616-C3554ADB03AA">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:43:57 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<sourcePk>4C59540B-0C13-1E2E-6EB3-02D6B4BC4CB2</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>poate primi</nameOnSource>
+<nameOnTarget>are un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>00D058D2-0BD7-A1F9-F41C-17F8FC76ABDB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>223B4BBF-081A-2616-C609-1B0BBAB51E7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

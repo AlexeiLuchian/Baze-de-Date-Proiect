@@ -91,14 +91,30 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_utilizator" id="3C9F1877-3FA1-96F4-F714-CCBF50201C3F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:21:07 UTC</createdTime>
+<generatorID>D356D33C-C63D-57E9-04C9-782EF195B0C3</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>BE61B2B4-A0B6-5182-C0CB-43524108F12D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="01B39BA4-8A9E-FFDE-45F4-E5B556147B35" name="produse PK">
 <createdBy>alexei</createdBy>
 <createdTime>2026-01-03 11:49:46 UTC</createdTime>
 <ownerDesignName>campis</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

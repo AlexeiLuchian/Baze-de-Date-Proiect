@@ -65,14 +65,60 @@
 </checkConstraint>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_tranzactie" id="A849F622-A78E-AF49-4E7C-3384A4890D4C">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:15:32 UTC</createdTime>
+<generatorID>66E1F48F-EC25-5C51-A4A7-097C0858EC1B</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>41107BD4-6961-81D2-B573-C1136565807E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_utilizator" id="4030AFB7-B602-AC8B-3B8D-C8ECA1C9D9BB">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:43:12 UTC</createdTime>
+<generatorID>2C9D03F3-A3A5-C203-F36B-AE2547296AED</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>BE61B2B4-A0B6-5182-C0CB-43524108F12D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_utilizator1" id="E8A9A26F-0D7A-0449-61FA-4C42FDF6631F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:43:57 UTC</createdTime>
+<generatorID>4EF157A0-B861-8F8A-2616-C3554ADB03AA</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>BE61B2B4-A0B6-5182-C0CB-43524108F12D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0B06F0A6-0F95-2269-15C1-0BFDD43AA29B" name="recenzii PK">
 <createdBy>alexei</createdBy>
 <createdTime>2026-01-03 12:15:10 UTC</createdTime>
 <ownerDesignName>campis</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

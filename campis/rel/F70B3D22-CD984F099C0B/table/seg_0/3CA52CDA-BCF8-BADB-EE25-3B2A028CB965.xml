@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CA52CDA-BCF8-BADB-EE25-3B2A028CB965" name="recenzii">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>223B4BBF-081A-2616-C609-1B0BBAB51E7A</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_recenzie" id="F8064F6B-612F-A996-83BC-6E70F83A0E9E">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>6F2BB42F-E6F1-7EE5-AE50-4678AF827B20</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="D976BD3A-0583-B6E9-61FB-A4801F6C2D43">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>53F83BBD-B0D8-83F7-056B-8431DD53A9B1</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+<description>stele (un rating pe o scara de la 1 la 5)</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="comentariu" id="F425679D-89E2-447E-6CF0-F28E788B65FD">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>022F8ED9-7179-23E2-4D7B-4892B53D09D7</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(comentariu) &gt;= 3"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tranzactie" id="4A27BC24-E1FA-224E-AECA-85042A9E699C">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>A849F622-A78E-AF49-4E7C-3384A4890D4C</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D593676F-324B-6F91-56BF-B2864DF5C0AE" referredColumn="2D80D8F8-7091-0037-B57E-D4C56FBE7572"/>
+</associations>
+</Column>
+<Column name="id_autor" id="A62BAA90-4A69-C656-267B-D63E73CC2C59">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>4030AFB7-B602-AC8B-3B8D-C8ECA1C9D9BB</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EA15561-C3DC-8460-24F0-5B24EFA77DDE" referredColumn="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F"/>
+</associations>
+</Column>
+<Column name="id_destinatar" id="0B2B60FD-D12B-6D32-502E-D75BFFE87198">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>E8A9A26F-0D7A-0449-61FA-4C42FDF6631F</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBC69960-083F-1656-87BD-CE2AAC597634" referredColumn="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AACC6DB-59D7-2451-56E4-BF51F224260F" name="recenzii_PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>0B06F0A6-0F95-2269-15C1-0BFDD43AA29B</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8064F6B-612F-A996-83BC-6E70F83A0E9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B787C565-B0CB-199E-CA3F-80A260710B24" name="recenzii__IDX">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>66E1F48F-EC25-5C51-A4A7-097C0858EC1B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4A27BC24-E1FA-224E-AECA-85042A9E699C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="652B6910-1E91-8A45-F9F5-4FBC1C9B61EB" name="autor_recenzii_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>2C9D03F3-A3A5-C203-F36B-AE2547296AED</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A62BAA90-4A69-C656-267B-D63E73CC2C59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="699D6D4F-C023-93EE-6F7F-DBDD73D3A560" name="destinatar_recenzii_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>4EF157A0-B861-8F8A-2616-C3554ADB03AA</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B2B60FD-D12B-6D32-502E-D75BFFE87198"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE5FB164-0131-0E1D-748E-9004DFF8B523" name="recenzii_tranzactii_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>66E1F48F-EC25-5C51-A4A7-097C0858EC1B</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A27BC24-E1FA-224E-AECA-85042A9E699C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

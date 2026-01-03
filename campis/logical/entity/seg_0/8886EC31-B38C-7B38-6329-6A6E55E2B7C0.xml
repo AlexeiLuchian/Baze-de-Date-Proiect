@@ -48,14 +48,30 @@
 </checkConstraint>
 <ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_utilizator" id="EFB8B85A-BA42-EDDC-01B8-E9CD58D27A65">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:17:34 UTC</createdTime>
+<generatorID>6CCC2D57-3D46-F94B-A390-FCFAD2743BA7</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>BE61B2B4-A0B6-5182-C0CB-43524108F12D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9E3AA5FB-ED93-4F77-B5D8-137FD6B0D329" name="nr_telefon">
 <createdBy>alexei</createdBy>
 <createdTime>2026-01-03 12:35:17 UTC</createdTime>
 <ownerDesignName>campis</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="false"/>
 </engineerTo>
 <newElementsIDs>FFC93BB4-13AD-7A14-15EC-0DC94F2D6320</newElementsIDs>
 <usedAttributes>

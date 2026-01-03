@@ -28,14 +28,45 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_utilizator" id="3D7ED832-F9B4-F43A-0694-6534E4902D4A">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:22:45 UTC</createdTime>
+<generatorID>60C681A1-CFEF-316E-F72B-0B2DE2A1F190</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>BE61B2B4-A0B6-5182-C0CB-43524108F12D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produs" id="2F205840-8151-91F9-3719-268A44191193">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:36:34 UTC</createdTime>
+<generatorID>4F2C4A93-C81C-3400-977D-256AACAA74D2</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>3A7E24DA-0A1F-9C2B-E2D1-2026FC5DE1D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3F2A5E08-722D-DEB6-B5C5-95F8D4A3D744" name="cos_cumparaturi PK">
 <createdBy>alexei</createdBy>
 <createdTime>2026-01-03 12:14:07 UTC</createdTime>
 <ownerDesignName>campis</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

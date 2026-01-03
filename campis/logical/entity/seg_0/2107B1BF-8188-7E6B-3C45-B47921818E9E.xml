@@ -72,5 +72,20 @@
 </listOfValues>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_produs" id="4DC28445-FB93-931B-C292-C1243BD77B8E">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:06:27 UTC</createdTime>
+<generatorID>0DB5CA2C-822D-ADB8-EE3A-265EB4054F54</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<referedAttribute>3A7E24DA-0A1F-9C2B-E2D1-2026FC5DE1D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 </Entity>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4FD7F89-0939-F361-4798-AC20F954C6F1" name="produse">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>C2E2EB57-909F-3836-468D-B9DD4E6FB183</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produs" id="9778702B-9C67-C93D-EB62-2AC404817385">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>3A7E24DA-0A1F-9C2B-E2D1-2026FC5DE1D5</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titlu" id="D3640D48-54CC-BB23-BCDF-A1843E31EE78">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>57D44F9D-EB9D-1AAE-18F3-AEEF3B8300AB</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(titlu) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="6144E71C-4098-E99C-F682-BF2E934971D4">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>5878246A-16E2-2B91-98F1-CC282F5B6E22</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="E9EEF490-168E-4969-2642-0AF099E159CC">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>CA66E486-16A0-63E1-A51A-D765ECBC1923</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="disponibil" description=""/>
+<valueDef value="rezervat" description=""/>
+<valueDef value="vandut" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_postare" id="2B8AC18B-A727-FE2A-E662-FE1947E7476A">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>F28827EC-B3B0-63BD-71CF-9FD01787DB34</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_utilizator" id="FB2956CC-A767-86F7-C88C-37B48876491F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>3C9F1877-3FA1-96F4-F714-CCBF50201C3F</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="378A0344-35FB-95F2-1405-027719F2D18D" referredColumn="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68CCA623-527A-F40D-A3B2-E92D6A16E988" name="produse_PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>01B39BA4-8A9E-FFDE-45F4-E5B556147B35</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9778702B-9C67-C93D-EB62-2AC404817385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F10B169-C918-1285-7050-B2EFFB867F72" name="produse_utilizatori_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>D356D33C-C63D-57E9-04C9-782EF195B0C3</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB2956CC-A767-86F7-C88C-37B48876491F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

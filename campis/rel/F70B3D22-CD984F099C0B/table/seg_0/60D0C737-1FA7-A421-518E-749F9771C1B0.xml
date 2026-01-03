@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60D0C737-1FA7-A421-518E-749F9771C1B0" name="cos_cumparaturi">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>2DFF3F79-37F9-C7DE-F412-73AB36DC8F00</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_adaugare" id="ECBD0246-342A-89F7-4635-3088025B52D2">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>F8EF0D6B-730E-D40F-A94C-342B2277F296</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_utilizator" id="6A59FE0B-C745-867E-2364-4923B0F84D52">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>3D7ED832-F9B4-F43A-0694-6534E4902D4A</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="769DA3C1-0001-F607-EFCC-218C8B3D061F" referredColumn="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F"/>
+</associations>
+</Column>
+<Column name="id_produs" id="C0B54A23-F5FD-5310-F849-E21713BD0E5C">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>2F205840-8151-91F9-3719-268A44191193</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="878FEC9D-504D-BEC0-E2CB-09835B9B9737" referredColumn="9778702B-9C67-C93D-EB62-2AC404817385"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0541A2E-31EB-612F-CBA3-60C888624A68" name="cos_cumparaturi_PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>3F2A5E08-722D-DEB6-B5C5-95F8D4A3D744</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECBD0246-342A-89F7-4635-3088025B52D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13069478-E6FF-F845-CD1B-C1CEE417408F" name="cos_produse_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>4F2C4A93-C81C-3400-977D-256AACAA74D2</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0B54A23-F5FD-5310-F849-E21713BD0E5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="876EA0D7-3988-09E9-31D9-391D1721FCBB" name="cos_utilizatori_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>60C681A1-CFEF-316E-F72B-0B2DE2A1F190</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A59FE0B-C745-867E-2364-4923B0F84D52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

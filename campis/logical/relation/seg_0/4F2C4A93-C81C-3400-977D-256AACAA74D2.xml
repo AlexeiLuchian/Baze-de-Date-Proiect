@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cos_produse_fk" directorySegmentName="seg_0" id="4F2C4A93-C81C-3400-977D-256AACAA74D2">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 18:36:34 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<engineerTo>
+<item key="F70B3D22-29E7-6E26-96AB-CD984F099C0B" value="true"/>
+</engineerTo>
+<sourcePk>01B39BA4-8A9E-FFDE-45F4-E5B556147B35</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>apare in</nameOnSource>
+<nameOnTarget>contine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C2E2EB57-909F-3836-468D-B9DD4E6FB183</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2DFF3F79-37F9-C7DE-F412-73AB36DC8F00</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

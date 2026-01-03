@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8911E71B-72FE-D680-6526-3D676BC8DE22" name="profil">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>8886EC31-B38C-7B38-6329-6A6E55E2B7C0</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bio" id="1B74BB53-01CC-04C6-4E5E-7A78E556E6BA">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>AE1FB839-0FF9-7E7F-B50C-4D8777EE3853</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(bio) &gt; 9"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefon" id="6FFA7CF3-4171-03A4-C5CE-36C5237AB1F8">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>FFC93BB4-13AD-7A14-15EC-0DC94F2D6320</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nr_telefon, &apos;^\+?[0-9]{10,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_utilizator" id="1C1324D9-9A35-6E23-B06E-3C48CB8FF6C9">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>EFB8B85A-BA42-EDDC-01B8-E9CD58D27A65</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74EBBF84-81ED-634D-B31E-77DACB06C27B" referredColumn="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F3034AD-D0FD-C435-1258-8A7F5B5542CD" name="profil_PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:27:02 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C1324D9-9A35-6E23-B06E-3C48CB8FF6C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2910DB5A-4BC0-31C2-4859-84D76D438211" name="nr_telefon">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>9E3AA5FB-ED93-4F77-B5D8-137FD6B0D329</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFA7CF3-4171-03A4-C5CE-36C5237AB1F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1260377B-D802-0531-70A3-2145924E3C43" name="profil__IDX">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6CCC2D57-3D46-F94B-A390-FCFAD2743BA7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1C1324D9-9A35-6E23-B06E-3C48CB8FF6C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A86DA0F-78EC-47ED-E2BA-022CAA1A02BA" name="profil_utilizatori_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>6CCC2D57-3D46-F94B-A390-FCFAD2743BA7</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C1324D9-9A35-6E23-B06E-3C48CB8FF6C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

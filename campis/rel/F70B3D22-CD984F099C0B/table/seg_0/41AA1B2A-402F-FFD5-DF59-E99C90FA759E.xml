@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41AA1B2A-402F-FFD5-DF59-E99C90FA759E" name="detalii">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>2107B1BF-8188-7E6B-3C45-B47921818E9E</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="descriere" id="4F6A0184-6819-BBD0-177F-26849A9FDBB9">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>E8A1B197-5EF3-DE84-140E-A374104C2AFA</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(descriere) &gt; 9"/>
+</checkConstraint>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categorie" id="FC0A18A7-5CE0-1817-CCEC-5C1C67B01147">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>153EF225-5A2E-D145-F878-4C5403802E37</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="carti" description=""/>
+<valueDef value="diverse" description=""/>
+<valueDef value="electronice" description=""/>
+<valueDef value="haine" description=""/>
+<valueDef value="mobilier" description=""/>
+<valueDef value="servicii" description=""/>
+<valueDef value="sport" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stare" id="7E2F494F-2DBA-F31A-8BCD-823D845792C0">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>2FE151AF-11D4-5266-D79D-89CE3B46CFD1</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="defect" description=""/>
+<valueDef value="folosit" description=""/>
+<valueDef value="nou" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_produs" id="58AFA699-BA27-4EFF-7634-DC0ADE66352F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>4DC28445-FB93-931B-C292-C1243BD77B8E</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58C2B7D5-166F-276F-B4F6-74BD23D93C84" referredColumn="9778702B-9C67-C93D-EB62-2AC404817385"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B240D43-A653-2DC5-8D0E-F446980E108E" name="detalii_PK">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:26:04 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58AFA699-BA27-4EFF-7634-DC0ADE66352F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F431A1C1-52BF-DE52-4B8A-B392C8FAA7A4" name="detalii__IDX">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0DB5CA2C-822D-ADB8-EE3A-265EB4054F54</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="58AFA699-BA27-4EFF-7634-DC0ADE66352F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD21DA6A-EC11-51D7-102C-7C50B2828620" name="detalii_produse_fk">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-03 19:24:55 UTC</createdTime>
+<generatorID>0DB5CA2C-822D-ADB8-EE3A-265EB4054F54</generatorID>
+<ownerDesignName>campis</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58AFA699-BA27-4EFF-7634-DC0ADE66352F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
