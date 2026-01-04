@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="utilizatori" directorySegmentName="seg_0" id="E1941E87-3FFB-A8C7-E901-F74088311052">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume" id="7F4ABF0F-AEE8-FF5A-8A54-A677111DE33B">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="8B8EF459-F5E1-C211-218C-8F2F7D881005">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_utilizator" id="C67C33EC-D2F7-182A-0D06-DB7A8C045E3F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="parola" id="CCB04F3E-617A-E5BA-DD4A-08D2D171209B">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="D3812788-A7FB-8317-669C-F07E63FBCCC1">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="utilizatori_PK" id="DC8FF0D4-2DA4-5372-91EB-FF86A784E154">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="email" id="BC135639-F169-4F7D-20BD-63448678073D">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="recenzii" directorySegmentName="seg_0" id="3CA52CDA-BCF8-BADB-EE25-3B2A028CB965">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_destinatar" id="0B2B60FD-D12B-6D32-502E-D75BFFE87198">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tranzactie" id="4A27BC24-E1FA-224E-AECA-85042A9E699C">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_autor" id="A62BAA90-4A69-C656-267B-D63E73CC2C59">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="rating" id="D976BD3A-0583-B6E9-61FB-A4801F6C2D43">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="comentariu" id="F425679D-89E2-447E-6CF0-F28E788B65FD">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_recenzie" id="F8064F6B-612F-A996-83BC-6E70F83A0E9E">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="recenzii__IDX" id="B787C565-B0CB-199E-CA3F-80A260710B24">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="autor_recenzii_fk" id="652B6910-1E91-8A45-F9F5-4FBC1C9B61EB">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="destinatar_recenzii_fk" id="699D6D4F-C023-93EE-6F7F-DBDD73D3A560">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="recenzii_tranzactii_fk" id="FE5FB164-0131-0E1D-748E-9004DFF8B523">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="recenzii_PK" id="8AACC6DB-59D7-2451-56E4-BF51F224260F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

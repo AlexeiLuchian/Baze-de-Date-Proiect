@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_data_postare" directorySegmentName="seg_0" id="9144316A-2521-A851-A11B-CBF49CDB6C86">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:44:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (:new.data_postare < TO_DATE('01.01.2026', 'DD.MM.YYYY'))
+  THEN
+   RAISE_APPLICATION_ERROR( -20001,
+    'Data invalida: ' || TO_CHAR(:new.data_postare, 'DD.MM.YYYY HH24:MI:SS') ||
+    'trebuie sa fie dupa 01.01.2026');
+  END IF;
+
+  IF (:new.data_postare > SYSDATE)
+  THEN
+   RAISE_APPLICATION_ERROR( -20002,
+    'Data invalida: ' || TO_CHAR(:new.data_postare, 'DD.MM.YYYY HH24:MI:SS') ||
+    'nu poate fi in viitor');
+   END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>D4FD7F89-0939-F361-4798-AC20F954C6F1</table>
+</TriggerOraclev10g>

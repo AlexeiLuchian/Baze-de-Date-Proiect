@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="profil" directorySegmentName="seg_0" id="8911E71B-72FE-D680-6526-3D676BC8DE22">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="bio" id="1B74BB53-01CC-04C6-4E5E-7A78E556E6BA">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_utilizator" id="1C1324D9-9A35-6E23-B06E-3C48CB8FF6C9">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_telefon" id="6FFA7CF3-4171-03A4-C5CE-36C5237AB1F8">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="profil__IDX" id="1260377B-D802-0531-70A3-2145924E3C43">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="profil_utilizatori_fk" id="4A86DA0F-78EC-47ED-E2BA-022CAA1A02BA">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="profil_PK" id="9F3034AD-D0FD-C435-1258-8A7F5B5542CD">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="nr_telefon" id="2910DB5A-4BC0-31C2-4859-84D76D438211">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="cos_cumparaturi" directorySegmentName="seg_0" id="60D0C737-1FA7-A421-518E-749F9771C1B0">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_utilizator" id="6A59FE0B-C745-867E-2364-4923B0F84D52">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_produs" id="C0B54A23-F5FD-5310-F849-E21713BD0E5C">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_adaugare" id="ECBD0246-342A-89F7-4635-3088025B52D2">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="cos_produse_fk" id="13069478-E6FF-F845-CD1B-C1CEE417408F">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="cos_utilizatori_fk" id="876EA0D7-3988-09E9-31D9-391D1721FCBB">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="cos_cumparaturi_PK" id="F0541A2E-31EB-612F-CBA3-60C888624A68">
+<createdBy>alexei</createdBy>
+<createdTime>2026-01-04 11:42:48 UTC</createdTime>
+<ownerDesignName>campis</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
